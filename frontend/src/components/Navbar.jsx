@@ -19,7 +19,7 @@ const Navbar = () => {
 					<nav className='flex flex-wrap items-center gap-4'>
 						<Link
 							to={"/"}
-							className='text-gray-600 hover:text-orange-600 transition duration-300
+							className='text-gray-300 hover:text-orange-600 transition duration-300
 					 ease-in-out'
 						>
 							Home
@@ -27,7 +27,7 @@ const Navbar = () => {
 						{user && (
 							<Link
 								to={"/cart"}
-								className='relative group text-gray-600 hover:text-orange-600 transition duration-300 
+								className='relative group text-gray-300 hover:text-orange-600 transition duration-300 
 							ease-in-out'
 							>
 								<ShoppingCart className='inline-block mr-1 group-hover:text-orange-600' size={20} />

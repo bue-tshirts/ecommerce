@@ -24,7 +24,7 @@ const LoginPage = () => {
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.8 }}
 			>
-				<h2 className='mt-6 text-center text-3xl font-extrabold text-emerald-400'>Create your account</h2>
+				<h2 className='mt-6 text-center text-3xl font-extrabold text-orange-600'>Bem vindo de volta</h2>
 			</motion.div>
 
 			<motion.div
@@ -36,8 +36,8 @@ const LoginPage = () => {
 				<div className='bg-gray-800 py-8 px-4 shadow sm:rounded-lg sm:px-10'>
 					<form onSubmit={handleSubmit} className='space-y-6'>
 						<div>
-							<label htmlFor='email' className='block text-sm font-medium text-gray-300'>
-								Email address
+							<label htmlFor='email' className='block text-sm font-medium text-gray-600'>
+								Endereço de email
 							</label>
 							<div className='mt-1 relative rounded-md shadow-sm'>
 								<div className='absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none'>
@@ -59,7 +59,7 @@ const LoginPage = () => {
 						</div>
 
 						<div>
-							<label htmlFor='password' className='block text-sm font-medium text-gray-300'>
+							<label htmlFor='password' className='block text-sm font-medium text-gray-600'>
 								Password
 							</label>
 							<div className='mt-1 relative rounded-md shadow-sm'>
@@ -102,9 +102,9 @@ const LoginPage = () => {
 					</form>
 
 					<p className='mt-8 text-center text-sm text-gray-400'>
-						Not a member?{" "}
-						<Link to='/signup' className='font-medium text-emerald-400 hover:text-emerald-300'>
-							Sign up now <ArrowRight className='inline h-4 w-4' />
+						Não tem uma conta?{" "}
+						<Link to='/signup' className='font-medium text-orange-600 hover:text-emerald-300'>
+							Crie uma agora <ArrowRight className='inline h-4 w-4' />
 						</Link>
 					</p>
 				</div>
