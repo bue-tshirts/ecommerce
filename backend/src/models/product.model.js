@@ -15,12 +15,10 @@ const productSchema = new mongoose.Schema(
 			min: 0,
 			required: true,
 		},
-		images: [
-			{
-				type: mongoose.Schema.Types.ObjectId,
-				ref: "ProductImage",
-			}
-		],
+		image: {
+			type: String,
+			required: [true, "Image is required"],
+		},
 		category: {
 			type: String,
 			required: true,

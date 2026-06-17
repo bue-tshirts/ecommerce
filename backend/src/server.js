@@ -22,7 +22,7 @@ if (ENV.NODE_ENV === "production") job.start();
 
 const __dirname = path.resolve();
 
-app.use(express.json({ limit: "10mb" })); // allows you to parse the body of the request
+app.use(express.json({ limit: "20mb" })); // allows you to parse the body of the request
 app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
